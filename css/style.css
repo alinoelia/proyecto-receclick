@@ -34,7 +34,7 @@ nav{
 .activo{
     border-bottom: solid 3px #FFC202;
 }
-.navbar{
+/* .navbar{
     background-color: #F8F6E7;
     border: none;
     box-shadow: none;
@@ -42,7 +42,7 @@ nav{
     justify-content: space-around;
     color: #303F46;
     
-}
+} */
 .nav-link{
     color: #303F46;
 }
@@ -74,11 +74,16 @@ nav ul li a {
     align-items: center;
 }
 .banner-foto{
-    background-image: cover;
+    /* background-image: cover; */
     filter:contrast(120%) ;
     filter: blur(5px);
 }
 h1{
     position: relative;
     top: 20%;
+}
+.navbar {
+    width: 100% !important;
+    height: 100%;
+    position: relative;
 }
