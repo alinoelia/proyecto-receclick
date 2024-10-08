@@ -25,24 +25,26 @@ header{
     position: fixed;  
     
 }
-nav{
-    /* padding: 15px;  */
+/* nav{
+    padding: 15px; 
     color: #F8F6E7;
-    /* border-bottom: solid 1px #303F46; */
+    border-bottom: solid 1px #303F46;
 
-}
-.activo{
+} */
+/* .activo{
     border-bottom: solid 3px #FFC202;
 }
-/* .navbar{
+.navbar{
     background-color: #F8F6E7;
     border: none;
     box-shadow: none;
     padding: 0 auto;
     justify-content: space-around;
     color: #303F46;
-    
-} */
+    width: 100%;
+    height: auto;
+    position: relative;
+}
 .nav-link{
     color: #303F46;
 }
@@ -72,7 +74,7 @@ nav ul li a {
     text-decoration: none;
     padding: 10px;
     align-items: center;
-}
+} */
 .banner-foto{
     /* background-image: cover; */
     filter:contrast(120%) ;
@@ -100,4 +102,15 @@ h1{
 }
 h2{
     font-size: 70px;
+}
+.navbar{
+    background-color: #F8F6E7;
+    border: none;
+    box-shadow: none;
+    padding: 0 auto;
+    justify-content: space-around;
+    color: #303F46;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
