@@ -103,3 +103,8 @@ iframe{
 .item3{
     grid-row: 2;
 }
+.btn{
+    background-color: #FFC202;
+    border: none;
+    border-radius: 30;
+}
