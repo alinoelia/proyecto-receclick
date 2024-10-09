@@ -25,13 +25,13 @@ header{
     position: fixed;  
     
 }
-nav{
-    /* padding: 15px;  */
+/* nav{
+    padding: 15px; 
     color: #F8F6E7;
-    /* border-bottom: solid 1px #303F46; */
+    border-bottom: solid 1px #303F46;
 
-}
-.activo{
+} */
+/* .activo{
     border-bottom: solid 3px #FFC202;
 }
 .navbar{
@@ -41,7 +41,9 @@ nav{
     padding: 0 auto;
     justify-content: space-around;
     color: #303F46;
-    
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 .nav-link{
     color: #303F46;
@@ -72,13 +74,43 @@ nav ul li a {
     text-decoration: none;
     padding: 10px;
     align-items: center;
-}
+} */
 .banner-foto{
-    background-image: cover;
+    /* background-image: cover; */
     filter:contrast(120%) ;
     filter: blur(5px);
 }
 h1{
     position: relative;
     top: 20%;
+}
+
+.cajatitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    padding-top: 30px;
+}
+.titulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+}
+h2{
+    font-size: 70px;
+}
+.navbar{
+    background-color: #F8F6E7;
+    border: none;
+    box-shadow: none;
+    padding: 0 auto;
+    justify-content: space-around;
+    color: #303F46;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
