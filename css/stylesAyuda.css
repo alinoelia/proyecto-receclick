@@ -26,11 +26,23 @@ body {
     background-image: url(/img/blobtitulo.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 900px auto;
+    background-size: 800px;
+    position: sticky;
     text-align: center; 
     padding: 150px;
     font-size: 60px;
     margin-bottom: 20px;
+}
+
+.contenedor2 {
+    width: 800px;
+    padding: 25px;
+    background-color: #F8F6E7;
+    background-position: center;
+    position: sticky;
+    border:#F98329;
+    left: 400px;
+    margin: 20px;
 }
 
 .preguntas {
@@ -70,9 +82,20 @@ details b {
     color: #fff;
 }
 
-/* navbar 
+/* navbar -> averiguar como es el css para ubicar bien el navbar y el footer 
 .navbar {
     width: 100% !important;
     height: 100px;
     position: relative;
+}*/
+
+/*
+@media screen and (min-width: 768px) {
+    .contenedor {
+        flex-direction: row;
+        width: 100%;
+        background-size: 400px;
+        font-size: 30px;
+    }
+    
 }*/
