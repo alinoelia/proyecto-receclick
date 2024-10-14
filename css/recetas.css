@@ -24,12 +24,6 @@ a{
 p{
     color: #303F46;
 }
-header{
-    background-color: #F8F6E7;
-    width: 100%;
-    position: fixed;  
-    
-}
 
 .banner-foto{
     /* background-image: cover; */
@@ -58,23 +52,7 @@ h1{
 h2{
     font-size: 70px;
 }
-.navbar{
-    background-color: #F8F6E7;
-    border: none;
-    box-shadow: none;
-    padding: 0 auto;
-    justify-content: space-around;
-    color: #303F46;
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-iframe{
-    padding: 0;
-    margin: 0;
-    height: auto;
-    
-}
+
 .cajaborde{
     display: inline-block;
     width: 80%;
