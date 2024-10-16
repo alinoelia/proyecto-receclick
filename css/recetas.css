@@ -35,8 +35,6 @@ h1{
     top: 20%;
 }
 .cajatitulo{
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
