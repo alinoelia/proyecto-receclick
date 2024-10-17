@@ -30,6 +30,7 @@ nav{
 .btn{
     border-radius: 30px;
     color: #303F46;
+    text-decoration: none;
 }
 .btn-outline-success{
     background-color: #FFC202;
