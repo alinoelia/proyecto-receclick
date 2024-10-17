@@ -20,7 +20,7 @@ body{
     border: none;
     border-radius: 30px;
     background-color: #FFC202;
-    width: 120px;
+    width: 130px;
 }
 .boton-2{
     height: 35px;
@@ -53,16 +53,16 @@ body{
     background-color: transparent; /* Ajusta el color del texto a tu gusto */
 }
 
-.contenedor h1{
+h1 {
     background-color: transparent;
     color: #ffff ;
-    font-size:  80px;  
+    font-size: 100px;  
     letter-spacing: 10px; 
 }
 .contenedor .slogan { 
     color: #ffff;
     background-color: transparent;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -91,15 +91,12 @@ body{
     display: flex;
     box-sizing: border-box;
     border: solid #f98329 1px;
-    padding: 5px;
     margin: 20px;
-    border-radius: none;
     justify-content: space-evenly;
     padding: 20px;
     height: 200px;
     align-items: center;
     border-radius: 30px;
-    
     
 }
 .caja-borde h2{
@@ -149,9 +146,7 @@ a{
     display: grid;
     box-sizing: border-box;
     border: solid #f98329 1px;
-    padding: 5px;
     margin: auto;
-    border-radius: none;
     padding: 20px;
     text-align: center;
     align-items: center;
@@ -174,6 +169,7 @@ a{
     background-color: #FB6D00;
     border-radius: 30px;
     height: 35px;
+    width: 30%;
     color: #F8F6E7;
     font-weight: 300;
     justify-content: flex-end;
@@ -218,7 +214,7 @@ a{
     padding: 10px;
 }
 
-
+/* ! Estilos del footer */
 footer{
     background-color:#f98329;
     min-height: 100px;
