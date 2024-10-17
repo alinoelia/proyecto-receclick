@@ -198,6 +198,7 @@ a{
     background-position: center;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 .texto-mejorar{
     position: absolute;
@@ -211,4 +212,11 @@ a{
     width: 200%;
     word-wrap: break-word; /* Evita que el texto haga salto de línea */
     border-radius: 5px;
+}
+.sobre{
+    margin: 20px;
+    padding: 10px;
+}
+footer{
+    background-color:#f98329;
 }
