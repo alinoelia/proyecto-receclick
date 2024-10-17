@@ -104,7 +104,7 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 0;
+    padding-top: 30px;
 
     animation-name: left-to-right;
     animation-duration: 2s;
@@ -118,8 +118,10 @@ p {
     text-align: center;
 }
 
-.cajatitulo titulo {
-    position: 0;
+.cajatitulo img {
+    width: 80%;
+    height: 50%;
+    border-radius: 0;
 }
 
 h1{
@@ -127,14 +129,21 @@ h1{
 }
 
 img {
-    width: 100%;
-    height: 100%;
     display: block;
     /* ! va a ocupar todo el espacio disponible*/
     object-fit: cover;
     object-position: center;
 }
 
+#persona img {
+    width: 130%;
+    border-radius: 59% 41% 66% 34% / 45% 52% 48% 55% ;
+}
+
+#persona2 img {
+    width: 90%;
+    border-radius: 56% 44% 44% 56% / 37% 33% 67% 63% ;
+}
 /* ! Arreglos para el navbar*/
 .btn{
     background-color: #FFC202;
@@ -143,4 +152,5 @@ img {
 }
 a{
     color: #303F46;
+    text-decoration: none;
 }

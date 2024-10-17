@@ -18,6 +18,7 @@ body {
     background-color: #F8F6E7;
     width: 100%;
     font-weight: 400;
+    color: #303F46;
 }
 
 /* !Estilos de la caja de preguntas */
@@ -93,7 +94,7 @@ a{
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 0;
+    padding-top: 30px;
 
     animation-name: left-to-right;
     animation-duration: 2s;
