@@ -15,13 +15,12 @@ html {
 body {
     background-color: #F8F6E7;
     color: #303F46;
-    /* font-size: 1.5em; */
     font-weight: 300;
+    width: 100%;
 }
 
 main {
-    width: 1200px;
-    margin: auto;
+    text-align: center;
 }
 
 /* !Estilos del titulo */
@@ -30,10 +29,8 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 0;
+    padding-top: 30px;
 
-    animation-name: left-to-right;
-    animation-duration: 2s;
 }
 .titulo {
     font-weight: 600;
@@ -44,8 +41,9 @@ main {
     text-align: center;
 }
 
-.cajatitulo titulo {
-    position: 0;
+.cajatitulo img {
+    width: 50%;
+    height: 50%;
 }
 
 h1{
@@ -54,7 +52,6 @@ h1{
 
 img {
     width: 100%;
-    height: 100%;
     display: block;
     object-fit: cover; /* Va a ocupar todo el espacio disponible*/
     object-position: center;
@@ -69,4 +66,97 @@ img {
 }
 a{
     color: #303F46;
+    text-decoration: none;
+}
+
+/* !Estilos de la caja */
+.cajaborde{
+    width: 70%;
+    box-sizing: border-box;
+    border: solid #F98329 1px;
+    padding: 20px;
+    margin: 60px auto;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px #bebebe;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+p {
+    width: 95%;
+    font-size: 18px;
+}
+.item1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.blob {
+    background-color: #F98329;
+    background: rgb(249,131,41);
+    background: linear-gradient(90deg, rgba(249,131,41,1) 7%, rgba(255,194,2,1) 56%, rgba(248,246,231,1) 100%);
+    border-radius: 58% 42% 60% 40% / 41% 57% 43% 59% ;
+    position: sticky;
+}
+.item2, .item3{
+    grid-column: 2/3;
+    
+}
+.item2{
+    grid-row: 1;
+    text-decoration: underline;
+}
+.item3{
+    grid-row: 2;
+    text-align: justify;
+}
+
+
+/*! estilos de una galeria de fotos */
+.galeria {
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.imagenes {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+}
+
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw ;
+    border-style: solid;
+    border-color: transparent transparent #F8F6E7 transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0  ;
+    border-style: solid;
+    border-color: #F8F6E7 transparent transparent  transparent;
 }
