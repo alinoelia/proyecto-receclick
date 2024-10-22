@@ -16,20 +16,25 @@ body{
 }
 
 .boton-1{
-    height: 40px;
+    height: 58px;
     border: none;
     border-radius: 30px;
     background-color: #FFC202;
-    width: 130px;
+    width: 250px;
+    font-size: 26px;
+    margin-top: 4%;
 }
 .boton-2{
-    height: 40px;
+    height: 50px;
     border-radius: 30px;
     background-color:#FB6D00 ;
-    width: 150px;
+    width: 230px;
     border: none;
     color: #F8F6E7;
-    font-weight:300;
+    font-size: 25px;
+}
+.size {
+    font-size: 22px;
 }
 .contenedor {
     position: relative;
@@ -55,28 +60,36 @@ body{
 h1 {
     background-color: transparent;
     color: #ffff ;
-    font-size: 100px;  
+    font-size: 130px;  
     letter-spacing: 10px; 
+    margin-bottom: 20px;
 }
 .contenedor .slogan { 
     color: #ffff;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
+    margin-top: 20px;
 }
 
 
 .contenedor p { 
     color: #ffff;
     background-color: transparent;
-    font-size: 15px;
+    font-size: 18px;
+    margin-bottom: 35px;
 }
 
 .contenedor-p{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px; 
+    height: 150px;
+    margin-top: 25px;
+}
+h3 {
+    font-size: 50px;
+    margin-bottom: 50px;
 }
 .contenedor-botones{
     display: flex;
@@ -96,10 +109,11 @@ h1 {
     height: 200px;
     align-items: center;
     border-radius: 30px;
-    
+    margin-top: 13%;
+    margin-bottom: 10%;
 }
 .caja-borde h2{
-    font-size: 30px;
+    font-size: 55px;
     text-align: center;
 
 }
@@ -125,6 +139,15 @@ h1 {
 h2{
     font-size: 70px;
 }
+.relato h3 {
+    font-size: 50px;
+}
+
+.centrado p {
+    font-size: 25px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
 
 /* ! Arreglos para el navbar*/
 .btn{
@@ -135,11 +158,14 @@ h2{
 a{
     color: #303F46;
     position: top;
+    text-decoration: none;
 }
 
 .centrado{
     text-align: center;
     align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .borde-grid{
     display: grid;
@@ -151,6 +177,8 @@ a{
     align-items: center;
     border-radius: 30px;
     max-width: 800px;
+    margin-top: 45px;
+    margin-bottom: 25px;
 }
 .seccion-mas-info{
     display: grid;
@@ -159,28 +187,30 @@ a{
     grid-template-rows: auto auto;
     gap: 20px;
     padding: 20px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 .boton-info{
     border: solid 2px #F8F6E7;
     background-color: #FB6D00;
     border-radius: 30px;
-    height: 40px;
-    width: 200px;
+    height: 60px;
+    width: 300px;
     color: #F8F6E7;
-    font-weight: 300;
+    font-weight: 400;
     justify-content: flex-end;
+    font-size: 22px;
 }
 .letra-blanca{
+    margin-top: 30px;
     color: #F8F6E7;
-    font-size: 40px;
+    font-size: 60px;
 }
 .img-seccion{
     grid-row: span 2;
 }
 .img-seccion img{
-    width: 40%;
+    width: 45%;
     height: auto;
 }
 .div-mejorar{
@@ -193,6 +223,8 @@ a{
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .texto-mejorar{
     position: absolute;
@@ -210,6 +242,8 @@ a{
 .sobre{
     margin: 20px;
     padding: 10px;
+    margin-top: 10%;
+    margin-bottom: 7%;
 }
 
 /* ! Estilos del footer */

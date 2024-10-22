@@ -1,113 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
-	<link rel="stylesheet" href="/css/stylesAyuda.css" />
-	<link rel="stylesheet" href="/css/navbar.css">
-	<title>Ayuda</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/stylesAyuda.css" />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <title>Ayuda</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-between">
+          <a class="navbar-brand" href="index.html">
+            <img class="logo" src="/img/logoRECEC.webp" alt="Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 d-flex w-100 justify-content-around">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="recetasSaladas.html">Saladas</a></li>
+                  <li><a class="dropdown-item" href="recetasDulces.html">Dulces</a></li>
+                  <li><a class="dropdown-item" href="#">Subir receta</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="informacion.html">Información</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link activo" href="ayuda.html">Ayuda</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-success me-3" type="button">
+                Donar
+              </button>
+              <button class="btn btn-sm btn-outline-secondary" type="button">
+                <a href="login.html">Ingresar</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>	
+    </header>
+    
+    <main>
+      <div class="cajatitulo">
+        <img src="/img/blobtitulo.png" alt="fondo titulo" width="50%" height="50%"/>
+          <h1 class="titulo">Ayuda</h1>
+      </div>
 
-	<header>
-		<nav class="navbar navbar-expand-lg">
-			<div class="container-fluid d-flex justify-content-between">
-				<a class="navbar-brand" href="index.html">
-					<img class="logo" src="/img/logoRECEC.webp" alt="Logo" />
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mb-2 mb-lg-0 d-flex w-100 justify-content-around">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="recetasSaladas.html">Saladas</a></li>
-								<li><a class="dropdown-item" href="recetasDulces.html">Dulces</a></li>
-								<li><a class="dropdown-item" href="#">Subir receta</a></li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="informacion.html">Información</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link activo" href="ayuda.html">Ayuda</a>
-						</li>
-					</ul>
-					<form class="d-flex">
-						<button class="btn btn-outline-success me-3" type="button">
-							Donar
-						</button>
-						<button class="btn btn-sm btn-outline-secondary" type="button">
-							<a href="login.html">Ingresar</a>
-						</button>
-					</form>
-				</div>
-			</div>
-		</nav>	
-	</header>
-	
-	<main>
-		<div class="cajatitulo">
-			<img src="/img/blobtitulo.png" alt="fondo titulo" width="50%" height="50%"/>
-				<h1 class="titulo">Ayuda</h1>
-		</div>
+      <section class="cajaborde">
+        <div class="contenedor2">
+          <!-- Caja de preguntas frecuentes -->
+          <div class="preguntas">
+            <details>
+                <summary>
+                    <b>01</b> ¿Cómo recupero mi contraseña?
+                </summary>
+                <div class="content">
+                    Aqui va la respuesta a esta pregunta.
+                </div>
+            </details>
+  
+            <details>
+                <summary>
+                    <b>02</b> ¿Cómo guardo las recetas?
+                </summary>
+                <div class="content">
+                    Aqui va la respuesta a esta pregunta.
+                </div>
+            </details>
+  
+            <details>
+              <summary>
+                  <b>03</b> ¿Puedo agregar recetas a la pagina?
+              </summary>
+              <div class="content">
+                  Aqui va la respuesta a esta pregunta.
+              </div>
+            </details>
+  
+            <details>
+                <summary>
+                    <b>04</b> ¿Cómo puedo colaborar en los comedores?
+                </summary>
+                <div class="content">
+                    Aqui va la respuesta a esta pregunta.
+                </div>
+            </details>
+          </div>
+        </div>
+      </section>
 
-		<section class="cajaborde">
-			<div class="contenedor2">
-				<!-- Caja de preguntas frecuentes -->
-				<div class="preguntas">
-						<details>
-								<summary>
-										<b>01</b> ¿Cómo recupero mi contraseña?
-								</summary>
-								<div class="content">
-										Aqui va la respuesta a esta pregunta.
-								</div>
-						</details>
-	
-						<details>
-								<summary>
-										<b>02</b> ¿Cómo guardo las recetas?
-								</summary>
-								<div class="content">
-										Aqui va la respuesta a esta pregunta.
-								</div>
-						</details>
-	
-						<details>
-								<summary>
-										<b>03</b> ¿Puedo agregar recetas a la pagina?
-								</summary>
-								<div class="content">
-										Aqui va la respuesta a esta pregunta.
-								</div>
-						</details>
-	
-						<details>
-								<summary>
-										<b>04</b> ¿Cómo puedo colaborar en los comedores?
-								</summary>
-								<div class="content">
-										Aqui va la respuesta a esta pregunta.
-								</div>
-						</details>
-				</div>
-			</div>
-		</section>
+      <!-- Seccion de comentarios-->
+      <section class="cajaborde">
+        <div class="contenedor3">
+          <h2>Ayúdanos a mejorar</h2>
+          <form class="formulario" id="feedbackForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
 
-		
-	</main>
-	
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
 
-	
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea><br><br>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	
+            <button class="boton-1" type="submit">Enviar</button>
+          </form>
 
-</body>
+          <script>
+            document.getElementById('feedbackForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const data = {
+              nombre: document.getElementById('nombre').value,
+              email: document.getElementById('email').value,
+              mensaje: document.getElementById('mensaje').value
+            };
+
+            const response = await fetch('http://localhost:5000/enviar-feedback', {
+              method: 'POST',
+              headers: {
+              'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(data),
+            });
+
+            const result = await response.text();
+            alert(result);
+            });
+          </script>
+        </div>
+      </section>
+      
+      
+    </main>
+    
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+  </body>
 </html>
