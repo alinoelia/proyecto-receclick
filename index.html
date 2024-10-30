@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/navbar.css">
     <title>Receclick</title>
@@ -12,7 +12,7 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid d-flex justify-content-between">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand activo" href="#">
             <img class="logo" src="/img/logoRECEC.webp" alt="Logo" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 d-flex w-100 justify-content-around">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle activo" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="recetasSaladas.html">Saladas</a></li>
                   <li><a class="dropdown-item" href="recetasDulces.html">Dulces</a></li>
@@ -31,7 +31,7 @@
                 <a class="nav-link" href="informacion.html">Información</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sobre nosotros</a>
+                <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="ayuda.html">Ayuda</a>
@@ -49,84 +49,124 @@
         </div>
       </nav>
     </header>
-    <!--   
-      <ul>
-        <img class="logo" src="/img/logoRECEC.webp" alt="Logo" />
-        <li><a href="#recetas"> Recetas</a></li>
-        <li><a href="#informacion">Informacion</a></li>
-        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-        <li><a href="ayuda.html">Ayuda</a></li>
-        <li><a href="#donar">Donar</a></li>
-        <li><a href="login.html">Ingresar</a></li>
-      </ul>
-    </nav>  -->
-      <!-- <section class="banner-inicio">
-        <img class="banner-foto" src="/img/banner.jpg" alt="banner-foto" /> -->
-        <!-- Imagen del banner.-->
-        <!-- <h1>ReceClick</h1>
-        <p class="eslogan">Cocinar y ayudar a un click de distancia</p>
-        <p>texto con mision y vision</p>
-        <button class="conocenos">Conocenos</button>
-      </section> -->
-  
-      <p>¡Elegi una opcion para empezar a cocinar!</p>
-      <button class="boton-comedor">Soy Comedor</button>
-      <button class="boton-individual">Soy individual</button>
-      <!-- Podemos poner una barra para elegir una opcion tambien (Revisar)-->
-  
-      <div class="contenedor-ayuda">
-        <h2>Ayuda con tu donacion</h2>
-        <button class="boton-donar">Donar</button
-        ><!-- Ver si hay que se hacerle una seccion especial-->
-      </div>
-      <section>
-        <!-- Seccion que contiene las imagenes -->
-        <h2>Novedades</h2>
-        <p>Te invitamos a leer los diferentes articulos que escribimos</p>
-        <article>
-          <h3>Relatos sobre la mesa</h3>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <button class="boton-seguir-leyendo">Seguir Leyendo</button>
-          <!-- Falta Agregar imagenes-->
-        </article>
-      </section>
-  
-      <section class="seccion-mas-info">
-        <!-- Seccion que contiene el boton mas informacion-->
-        <img src="" alt="" />
-        <p>Nos importa . ..</p>
-        <button class="boton-mas-info">Mas informacion</button>
-      </section>
-  
-      <section>
-        <!-- Secccion que contiene el sobre la pagina (Receclick)-->
-        <h3>Sobre ReceClick</h3>
-        <video src=""></video
-        ><!-- Falta video de nosotras (Hay que grabarlo y editar)-->
-        <button class="boton-sobre-nosotros">Sobre nosotros</button>
-      </section>
-  
-      <div class="div-mejorar">
-        <!--Falta agregar LOS BLOBS-->
-        <h3>¡Ayudanos a mejorar!</h3>
-        <p>
-          Te invitamos a contarnos que te parecio ReceClick, queremos conocer tu
-          opinion para saber que deberiamos mejorar. Te dejamos el formulario para
-          que puedas contribuir a que este proyecto siga creciendo. Gracias :>
+  <main>
+      
+      <div class="contenedor">
+        <img src="/img/banner.jpg" alt="Imagen-del-inicio">
+        <section class="texto-encima">
+          <h1>ReceClick</h1>
+        <p class="slogan">Cocinar y ayudar a un click de distancia</p>
+        <p>Nuestra misión es crear recetas que aprovechen al máximo los alimentos y enseñar a reducir desperdicios, 
+          inspirando una cocina más sostenible. Además, ofrecemos productos en nuestro e-commerce para facilitar este estilo de vida
         </p>
-      </div>
-  
-      <footer>
-        <div>
-          <!-- Agregar los iconos,  etc discutir que falta. -->
-        </div>
-      </footer>
+        <br>
+        <button class="boton-1">Conocenos</button> 
+    </section>
+    </div>     
+  </main>
+  <br>
+  <br>
+    <div class="contenedor-p">
+      <h3>¡Elegi una opcion para empezar a cocinar!</h3>
+    </div>
+    <div class="contenedor-botones">
+      <button class="boton-1">Soy Comedor</button>
+      <button class="boton-1">Soy individual</button>
+    </div>
 
-    <script type="module" src="/main.js"></script>
+    <div class="caja-borde">
+      <div>
+        <h2>Ayudá con tu donación</h2>
+      </div>
+      <div class="boton-caja">
+        <button class="boton-2">Donar</button>
+      </div>
+    </div>
+    <section class="centrado">
+      <h2>Novedades</h2>
+      <p>Te invitamos a leer los diferentes articulos que escribimos</p>
+      <div class="borde-grid">
+        <div class="relato">
+          <h3>Relatos sobre la mesa</h3>
+        </div>
+        <div><img src="" alt="" /></div>
+        <div><img src="" alt="" /></div>
+        <div><img src="" alt="" /></div>
+        <div><img src="" alt="" /></div>
+        <div>
+          <button class="boton-2 size">Seguir Leyendo</button>
+        </div>
+        <!-- Falta Agregar imagenes-->
+      </div>
+    </section>
+
+    <div class="seccion-mas-info">
+      <div class="img-seccion">
+        <img src="/img/imgNosImporta.png" alt="imagen referencia" />
+      </div>
+      <div>
+        <p class="letra-blanca">Nos importa...</p>
+      </div>
+      <div>
+        <button class="boton-info">Más información</button>
+      </div>      
+    </div>
+
+    <section class="centrado sobre">
+      <!-- Secccion que contiene el sobre la pagina (Receclick)-->
+      <h3>Sobre ReceClick</h3>
+      <!-- <video src=""></video> --><!-- Falta video de nosotras (Hay que grabarlo y editar)-->
+      <button class="boton-2 size">Sobre nosotros</button>
+    </section>
+
+    <div class="div-mejorar centrado">
+      <div class="texto-mejorar">
+        <h3>¡Ayudanos a mejorar!</h3>
+      <p>
+        Te invitamos a contarnos que te parecio ReceClick, queremos conocer tu
+        opinion para saber que deberiamos mejorar. Te dejamos el formulario para
+        que puedas contribuir a que este proyecto siga creciendo. Gracias!
+      </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="icon-elemento">
+          <a href="https://www.instagram.com/receclick.ar?igsh=MWg2b2RmN3ZtYTdtNA==" class="icon">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elemento">
+          <a href="#" class="icon">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elemento">
+          <a href="#" class="icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu-elemento">
+          <a href="index.html" class="menu-icon"> Inicio </a>
+        </li>
+        <li class="menu-elemento">
+          <a href="#" class="menu-icon"> Equipo </a>
+        </li>
+        <li class="menu-elemento">
+          <a href="#" class="menu-icon"> Contacto </a>
+        </li>
+        <li class="menu-elemento">
+          <a href="sobre-nosotros.html" class="menu-icon"> Sobre Nosotros </a>
+        </li>
+      </ul>
+      <p class="text">2024 | Todos los derechos reservados</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

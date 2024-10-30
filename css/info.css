@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import 'bootstrap'; 
 * {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -15,7 +15,7 @@ html {
 body {
     background-color: #F8F6E7;
     color: #303F46;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     font-weight: 300;
 }
 
@@ -104,7 +104,7 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 0;
+    padding-top: 30px;
 
     animation-name: left-to-right;
     animation-duration: 2s;
@@ -118,8 +118,10 @@ p {
     text-align: center;
 }
 
-.cajatitulo titulo {
-    position: 0;
+.cajatitulo img {
+    width: 80%;
+    height: 50%;
+    border-radius: 0;
 }
 
 h1{
@@ -127,10 +129,28 @@ h1{
 }
 
 img {
-    width: 100%;
-    height: 100%;
     display: block;
     /* ! va a ocupar todo el espacio disponible*/
     object-fit: cover;
     object-position: center;
+}
+
+#persona img {
+    width: 130%;
+    border-radius: 59% 41% 66% 34% / 45% 52% 48% 55% ;
+}
+
+#persona2 img {
+    width: 90%;
+    border-radius: 56% 44% 44% 56% / 37% 33% 67% 63% ;
+}
+/* ! Arreglos para el navbar*/
+.btn{
+    background-color: #FFC202;
+    border: none;
+    /* border-radius: 30; */
+}
+a{
+    color: #303F46;
+    text-decoration: none;
 }

@@ -1,47 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'bootstrap'; 
 
 * {
+    font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 100%; /* 16px; */
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    --bg-color: #F8F6E7;
-    --text-color: #333;
     --preguntas-color: #fff;
+    background-color: #F8F6E7;
     width: 100%;
-    height: 100vh;
-    /*display: flex;*/
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20em;
-    
+    font-weight: 400;
+    color: #303F46;
 }
 
-/* Blobs en los titulos*/
-.contenedor {
-    width: 100%;
-    background-image: url(/img/blobtitulo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 800px;
-    position: sticky;
-    text-align: center; 
-    padding: 150px;
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
+/* !Estilos de la caja de preguntas */
 .contenedor2 {
-    width: 800px;
     padding: 25px;
     background-color: #F8F6E7;
-    background-position: center;
-    position: sticky;
     border:#F98329;
-    left: 400px;
     margin: 20px;
 }
 
@@ -82,15 +66,9 @@ details b {
     color: #fff;
 }
 
-/* navbar -> averiguar como es el css para ubicar bien el navbar y el footer 
-.navbar {
-    width: 100% !important;
-    height: 100px;
-    position: relative;
-}*/
 
-/*
-@media screen and (min-width: 768px) {
+
+/* @media screen and (min-width: 768px) {
     .contenedor {
         flex-direction: row;
         width: 100%;
@@ -98,4 +76,114 @@ details b {
         font-size: 30px;
     }
     
-}*/
+} */
+
+/* ! Arreglos para el navbar*/
+.btn{
+    background-color: #FFC202;
+    border: none;
+    /* border-radius: 30; */
+}
+a{
+    color: #303F46;
+    text-decoration: none;
+}
+
+/* !Estilos del titulo */
+.cajatitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+
+    animation-name: left-to-right;
+    animation-duration: 2s;
+}
+.titulo {
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+}
+
+.cajatitulo titulo {
+    position: 0;
+}
+
+h1{
+    font-size: 70px;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    /* ! va a ocupar todo el espacio disponible*/
+    object-fit: cover;
+    object-position: center;
+}
+
+/* !Estilos de la caja */
+.cajaborde{
+    width: 60%;
+    box-sizing: border-box;
+    border: solid #F98329 1px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px #bebebe;
+    
+}
+
+.contenedor3 {
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 5px;
+    font-size: 40px;
+}
+
+.formulario {
+    height: 100%;
+    padding: 10px;
+    margin: 30px;
+    background-image: url('../img/blobsFinalPag.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    width: 400px; 
+    
+}
+
+.boton-1{
+    height: 40px;
+    border-radius: 20px;
+    background-color: #F8F6E7;
+    width: 200px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 4%;
+}
+
+#mensaje {
+    width: 100%;
+}
+
+#feedbackForm {
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
