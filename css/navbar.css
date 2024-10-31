@@ -19,6 +19,9 @@ nav{
 .nav-link{
     color: #303F46;
 }
+.nav-link:hover{
+    font-weight: 600;
+}
 
 .logo {
     margin-right: 10px;

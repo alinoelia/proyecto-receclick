@@ -90,3 +90,49 @@ h2{
 footer{
     background-color: #F98329;
 }
+@media screen and (max-width: 767px){
+    .cajatitulo{
+        margin-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .titulo{
+        font-size: 1.75rem;
+        margin-top: 10px;
+    }
+    .cajatitulo img{
+        width: 100%;
+    }
+    img{
+        width: 200px;
+    }
+    .cajaborde {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        padding: 15px;
+    }
+    .item1 {
+        grid-column: 1 / -1; 
+        grid-row: 1;
+    }
+
+    .item2, .item3 {
+        grid-column: 1 / -1; 
+    }
+    .item2 {
+        grid-row: 2;
+        text-align: center; 
+    }
+
+    .item3 {
+        grid-row: 3;
+        text-align: center; 
+    }
+
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}

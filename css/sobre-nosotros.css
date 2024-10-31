@@ -160,3 +160,17 @@ p {
     border-style: solid;
     border-color: #F8F6E7 transparent transparent  transparent;
 }
+@media screen and (max-width: 767px){
+    .cajatitulo{
+        margin-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .titulo{
+        font-size: 1.75rem;
+        margin-top: 10px;
+    }
+    .cajatitulo img{
+        width: 100%;
+    }
+}
