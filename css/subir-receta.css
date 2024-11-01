@@ -1,0 +1,43 @@
+.contenedor3 {
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 5px;
+    font-size: 40px;
+}
+
+.formulario {
+    height: 100%;
+    padding: 10px;
+    margin: 30px;
+    background-image: url('../img/blobsFinalPag.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    width: 400px; 
+    
+}
+
+.boton-1{
+    height: 40px;
+    border-radius: 20px;
+    background-color: #F8F6E7;
+    width: 200px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 4%;
+}
+
+#mensaje {
+    width: 100%;
+}
