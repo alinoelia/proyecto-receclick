@@ -158,7 +158,7 @@ footer .text {
 
 
 @media screen and (max-width: 767px){
-    .cajatitulo{
+    .cajatitulo{ /* cambios para el blob titulo en responsive */
         margin-top: 40px;
         padding-left: 10px;
         padding-right: 10px;
@@ -172,7 +172,7 @@ footer .text {
     }
     img{
         width: 200px;
-    }
+    } /* hasta aca blob titulo */
     .cajaborde {
         display: grid;
         grid-template-columns: 1fr;
