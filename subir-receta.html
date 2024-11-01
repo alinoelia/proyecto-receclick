@@ -66,14 +66,24 @@
             <label for="receta">Receta:</label>
             <textarea id="receta" name="receta" required></textarea><br><br>
 
-            <label for="imgSubirReceta">Imágen/Imágenes</label>
-            <input type="image" id="imgSubirReceta" name="imgSubirReceta"><br><br>
+            <label for="exampleDataList" class="form-label">Ingredientes:</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList"><br><br>
+            <datalist id="datalistOptions">
+              <option value="papa">
+              <option value="harina">
+              <option value="banana">
+              <option value="huevo">
+              <option value="pollo">
+            </datalist>
+
+            <label for="formFileMultiple" class="form-label">Imágen/imágenes de la receta:</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple><br><br>
 
             <button class="boton-1" type="submit">Enviar</button>
           </form>
-
         </div>
       </section>
+
     </main>
     <footer class="footer">
       <ul class="social-icon">
