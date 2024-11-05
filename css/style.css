@@ -343,4 +343,7 @@ footer{
     .texto-encima{
         max-width: 400px;
     }
+    .inicio h1{ 
+        font-size: 4rem;
+    }
 }
