@@ -339,11 +339,27 @@ footer{
     .donar{
         display: flex;
         flex-direction: column;
+        height: 300px;
     }
     .texto-encima{
         max-width: 400px;
     }
     .inicio h1{ 
         font-size: 4rem;
+    }
+    .boton-1{
+        height: 40px;
+        max-width: 200px;
+    }
+    .boton-2{
+        height: 40px;
+        max-width: 200px;
+    }
+    .boton-info{
+        height: 40px;
+        max-width: 200px;
+    }
+    .contenedor-p{
+        text-align: center;
     }
 }
