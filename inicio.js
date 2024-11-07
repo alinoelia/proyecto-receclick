@@ -9,3 +9,12 @@ function updateParagraphContent() {
 // Ejecutar la función en carga de página y en cambio de tamaño
 updateParagraphContent();
 window.addEventListener('resize', updateParagraphContent);
+
+document.getElementById("comedor").addEventListener("click", function() {
+  const cuadro = document.getElementById("cuadroComedor"); // Cambia a "cuadroComedor"
+  if (cuadro.style.display === "none" || cuadro.style.display === "") {
+      cuadro.style.display = "block"; // Muestra el cuadro
+  } else {
+      cuadro.style.display = "none"; // Oculta el cuadro
+  }
+});

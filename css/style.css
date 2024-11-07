@@ -139,8 +139,14 @@ h3 {
 h2{
     font-size: 70px;
 }
+.nov-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 .relato h3 {
     font-size: 50px;
+    color:#FB6D00;
 }
 
 .centrado p {
@@ -179,6 +185,12 @@ a{
     max-width: 800px;
     margin-top: 45px;
     margin-bottom: 25px;
+}
+.img-nov img{
+    max-width: 300px;
+    margin: 20px;
+    border-radius: 60px;
+    max-height: 300px;
 }
 .seccion-mas-info{
     display: grid;
@@ -316,6 +328,22 @@ footer{
     margin-bottom: 10px;
     font-size: 20px;
 }
+
+
+.cuadro-oculto{
+    display: none;
+    box-sizing: border-box;
+    border: solid #f98329 1px;
+    margin: 20px;
+    /* justify-content: space-evenly; */
+    padding: 20px;
+    /* height: 200px; */
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+}
+
 @media screen and (max-width: 767px){
     .contenedor{
         margin-top: 60px;
@@ -361,5 +389,14 @@ footer{
     }
     .contenedor-p{
         text-align: center;
+    }
+    .nov-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .borde-grid{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }

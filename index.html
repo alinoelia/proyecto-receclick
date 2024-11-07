@@ -68,8 +68,30 @@
       <h3>¡Elegi una opcion para empezar a cocinar!</h3>
     </div>
     <div class="contenedor-botones">
-      <button class="boton-1">Soy Comedor</button>
-      <button class="boton-1">Soy individual</button>
+      <button id="comedor" class="boton-1">Soy Comedor</button>
+      <button id="individual" class="boton-1">Soy individual</button>
+
+      <div id="cuadroComedor" class="cuadro-oculto">
+          <h3>Empecemos!</h3>
+          <form class="formulario" id="comedorForm">
+            <label for="exampleDataList" class="form-label">¿Cuál es el ingrediente principal?</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" required><br><br>
+            <datalist id="datalistOptions">
+              <option value="papa">
+              <option value="harina">
+              <option value="banana">
+              <option value="huevo">
+              <option value="pollo">
+            </datalist>
+            <label for="exampleDataList">¿Cuántas personas van a comer?</label>
+            <input type="text" id="cantComensales" name="cantidadComensales"><br><br>
+
+            <label for="exampleDataList" class="form-label">Otros ingredientes</label>
+            <input type="text" id="otrosIngredientes" name="otrosIngredientes"><br><br>
+
+            <button class="boton-1" type="submit">Generar receta</button>
+          </form>
+      </div>
     </div>
 
     <div class="caja-borde donar">
@@ -87,14 +109,15 @@
         <div class="relato">
           <h3>Relatos sobre la mesa</h3>
         </div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
+        <div class="nov-grid">
+          <div class="img-nov"><img src="public/img/novedades/verdurasEst.jpg" alt="verduras de estación"/></div>
+          <div class="img-nov"><img src="public/img/novedades/familiaAlm.jpg" alt="almuerzo en familia" /></div>
+          <div class="img-nov"><img src="public/img/novedades/nutricion.jpg" alt="nutrición"/></div>
+          <div class="img-nov"><img src="public/img/novedades/entregaAlim.jpg" alt="donación de alimentos"/></div>
+        </div>
         <div>
           <button class="boton-2 size">Seguir Leyendo</button>
         </div>
-        <!-- Falta Agregar imagenes-->
       </div>
     </section>
 
