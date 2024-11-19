@@ -13,45 +13,46 @@
   <body>
     <!-- Navbar -->
     <header>
-      <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid d-flex justify-content-between">
-        <a class="navbar-brand activo" href="#">
-          <img class="logo" src="/img/logoRECEC.webp" alt="Logo" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 d-flex w-100 justify-content-around">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="recetasSaladas.html">Saladas</a></li>
-                <li><a class="dropdown-item" href="recetasDulces.html">Dulces</a></li>
-                <li><a class="dropdown-item" href="#">Subir receta</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="informacion.html">Información</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ayuda.html">Ayuda</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <button class="btn btn-outline-success me-3" type="button">
-              <a href="tienda.html">Donar</a>
-            </button>
-            <button class="btn btn-sm btn-outline-secondary" type="button">
-              <a href="login.html">Ingresar</a>
-            </button>
-          </form>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
+          <a class="navbar-brand activo" href="index.html">
+            <img class="logo" src="/img/logoRECEC.webp" alt="Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 d-flex w-100 justify-content-around">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="recetasSaladas.html">Saladas</a></li>
+                  <li><a class="dropdown-item" href="recetasDulces.html">Dulces</a></li>
+                  <li><a class="dropdown-item" href="subir-receta.html">Subir receta</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="informacion.html">Información</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ayuda.html">Ayuda</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-success me-3" type="button">
+                <a href="tienda.html">Donar</a>
+              </button>
+              <button class="btn btn-sm btn-outline-secondary" type="button">
+                <a href="login.html">Ingresar</a>
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     </header>
+
     <div class="nav container">
       <!-- Icono -->
       <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
@@ -113,6 +114,43 @@
       </div>
     </section>
 
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="icon-elemento">
+          <a href="https://www.instagram.com/receclick.ar?igsh=MWg2b2RmN3ZtYTdtNA==" class="icon">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elemento">
+          <a href="#" class="icon">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elemento">
+          <a href="#" class="icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu-elemento">
+          <a href="index.html" class="menu-icon"> Inicio </a>
+        </li>
+        <li class="menu-elemento">
+          <a href="#" class="menu-icon"> Equipo </a>
+        </li>
+        <li class="menu-elemento">
+          <a href="#" class="menu-icon"> Contacto </a>
+        </li>
+        <li class="menu-elemento">
+          <a href="sobre-nosotros.html" class="menu-icon"> Sobre Nosotros </a>
+        </li>
+      </ul>
+      <p class="text">2024 | Todos los derechos reservados</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="tienda.js"></script>
   </body>
 </html>
