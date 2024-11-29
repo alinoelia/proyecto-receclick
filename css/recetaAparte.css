@@ -1,0 +1,106 @@
+
+main {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+    margin: 0; /* Elimina márgenes del main */
+}
+.receta-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Dos columnas: una pequeña para la izquierda, otra grande para la derecha */
+    grid-template-rows: auto auto; /* Dos filas: una para la imagen, otra para el texto */
+    gap: 20px; /* Espaciado entre elementos */
+    max-width: 800px;
+    background-color: #F8F6E7;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.imagen-receta {
+    grid-column: 1; /* Coloca la imagen en la primera columna */
+    grid-row: 1 / span 2; /* Ocupa ambas filas (verticalmente) */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.texto-izquierda {
+    grid-column: 1;
+    grid-row: 2; /* Va debajo de la imagen */
+    box-sizing: border-box;
+    border: solid #F98329 1px;
+    padding: 10px;
+    margin: 230px auto;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px #bebebe;
+    justify-content: center;
+    align-items: center;
+}
+.texto-izquierda ul{
+    text-align: start;
+}
+
+
+.texto-derecha {
+    grid-column: 2; /* Coloca este contenedor en la segunda columna */
+    grid-row: 1 / span 2; /* Ocupa ambas filas de la derecha */
+    box-sizing: border-box;
+    border: solid #F98329 1px;
+    padding: 10px;
+    width: 750px;
+    /* margin: 200px auto; */
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px #bebebe;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 170px;
+}
+.texto-derecha p{
+    text-align: start;
+}
+@media screen and (max-width: 767px){
+    .cajatitulo{ /* cambios para el blob titulo en responsive */
+        margin-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .titulo{
+        font-size: 1.75rem;
+        margin-top: 10px;
+    }
+    .cajatitulo img{
+        width: 100%;
+    }
+    img{
+        width: 200px;
+    } /* hasta aca blob titulo */
+    .receta-container {
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: auto auto auto; /* Tres filas: una para cada elemento */
+        margin-top: 10px;
+        gap: 0px;
+    }
+
+    .imagen-receta {
+        max-width: 350px;
+        grid-column: 1; /* Mantén la imagen en la única columna */
+        grid-row: 1; /* Primera fila */
+        margin: 0 auto;
+    }
+
+    .texto-izquierda {
+        max-width: 350px;
+        grid-column: 1; /* Mantén el texto izquierdo en la única columna */
+        grid-row: 2; /* Segunda fila */
+        margin: 20px auto;
+    }
+
+    .texto-derecha {
+        max-width: 350px;
+        grid-column: 1; /* Mantén el texto derecho en la única columna */
+        grid-row: 3; /* Tercera fila */
+        margin: 20px auto;
+    }
+}

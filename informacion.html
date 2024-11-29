@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/info.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="/css/info.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     <title>Informacion</title>
   </head>
   <body>
@@ -50,63 +50,73 @@
       </nav>
     </header>
 
-    <!-- <div class="cajatitulo">
-      <img src="/img/blobtitulo.png" alt="fondo titulo" width="50%" height="50%"/>
-        <h1 class="titulo">Información</h1>
-    </div> -->
     <main>
       <div class="cajatitulo">
-        <img src="/img/blobtitulo.png" alt="fondo titulo" width="50%" height="50%"/>
-          <h1 class="titulo">Información</h1>
+        <img src="/img/blobtitulo.png" alt="fondo titulo"  width="50%" height="50%"/>
+        <h1 class="titulo">Información</h1>
       </div>
-      <section class="primero">
-        <div id="webdev">
-          <h2>Comedores</h2>
-        </div>
-        <div id="persona">
-          <img src="/img/comedor.jpg" alt="Ilustración de un comedor">
-        </div>
-        
-        
+
+    <!-- Sección de Reciclaje -->
+      <section class="informacion" id="reciclaje">
+        <div class="contenido">
+          <div class="texto">
+            <h2>¿Qué es el Reciclaje?</h2>
+            <p>El reciclaje es un proceso mediante el cual los materiales usados se recolectan, procesan y transforman en nuevos productos. Este proceso reduce el consumo de recursos naturales y contribuye a la reducción de residuos.</p>
+            <h3>Formas de Reciclaje</h3>
+            <ul>
+              <li><strong>Reciclaje de Papel:</strong> El papel se puede reciclar muchas veces, y es importante separarlo del resto de los residuos.</li>
+              <li><strong>Reciclaje de Plástico:</strong> Los plásticos se pueden reutilizar para crear nuevos productos, como ropa o muebles.</li>
+              <li><strong>Reciclaje de Vidrio:</strong> El vidrio se puede reciclar de forma indefinida sin perder calidad.</li>
+              <li><strong>Reciclaje de Metal:</strong> Los metales, como el aluminio, se pueden fundir y reutilizar para fabricar nuevos productos.</li>
+            </ul>
+          </div>
+          <div class="imagen">
+            <img src="/img/reciclar.jpg" alt="Reciclaje" class="imagen-info izquierda">
+          </div>
+        </div>  
       </section>
 
-      <section class="segundo">
-        <p class="relleno">Comedores en Buenos Aires</p>
-        <p>
-          Aqui va la informacion sobre los comedores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed placeat eos 
-          sapiente quae quaerat quod delectus dolores similique molestiae repellat voluptas, a, ipsum expedita voluptate, maiores cupiditate 
-          voluptatibus consectetur?
-        </p>
-        <p>
-          Mas informacion sobre los comedores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quas saepe similique recusandae, 
-          cupiditate eius illum ipsam deleniti asperiores sapiente cumque a fuga impedit dignissimos pariatur cum. Iure, a fugiat?
-        </p>
-      </section>
-
-      <section class="primero">
-        <div id="webdev2">
-          <h2>Reciclaje</h2>
+      <!-- Sección de Comedores -->
+      <section class="comedores" id="comedores">
+        <div class="contenido">
+          <div class="texto">
+            <h2>Comedores Comunitarios en Buenos Aires</h2>
+            <p>
+              En Buenos Aires existen varios comedores que ofrecen alimentos a quienes más lo necesitan. <br>
+              Aqui te dejamos un mapa donde vas a encontrar los comedores que se encuentran en la capital de Buenos Aires. <br>
+              Puedes hacerle zoom a la imagen y te ira acercando a cada comedor.
+            </p>  
+          </div>
+          <iframe class="mapa" width='560' height='315' frameborder='0' src='https://mapa.poblaciones.org/map/173801/?emb=1&co=1#/@-34.65374,-58.424435,11z&r11898/l=390501!v0!w0,0,0' ></iframe>
         </div>
-        <div id="persona2">
-          <img src="/img/reciclar.jpg" alt="Compostaje">
+      </section>
+
+      <section class="comedores" id="vegetales">
+        <div class="contenido">
+          <div class="texto">
+            <h2>Los Vegetales y su Impacto en la Salud</h2>
+            <p>Los vegetales son una fuente esencial de vitaminas, minerales y fibra que contribuyen a una vida saludable. Incorporarlos en nuestra dieta diaria ayuda a fortalecer el sistema inmunológico, mejorar la digestión y mantener un corazón saludable. Además, su bajo contenido calórico y alto valor nutricional los convierte en aliados ideales para mantener un peso adecuado y prevenir enfermedades crónicas como la diabetes y enfermedades cardiovasculares. Consumir una variedad de vegetales frescos es clave para una salud óptima y bienestar general.</p>
+          </div>
+          
+          <img src="/img/vegetales.jpg" alt="Comedores en Buenos Aires" class="imagen-info">
         </div>
-        
       </section>
-
-      <section class="segundo">
-        <p class="relleno">Reciclar</p>
-        <p>
-          Aqui va la informacion sobre el reciclaje. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium repellendus eius vel 
-          consectetur illum. Consectetur enim reprehenderit vel error, ad asperiores! Veniam deserunt sint aperiam magnam corrupti quaerat, 
-          distinctio voluptates! 
-        </p>
-        <p>
-          Mas informacion sobre reciclar y compostar. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nostrum, officia assumenda 
-          nihil expedita hic placeat voluptas excepturi, pariatur harum doloremque labore cumque neque accusantium? Animi exercitationem consequatur in 
-          consequuntur.
-        </p>
+      <section class="informacion" id="nutricion">
+        <div class="contenido">
+          <div class="texto">
+            <h2>Aqui tienes algunos tips para mantener una vida saludable</h2>
+            <ul>
+              <li><strong>Bebe suficiente agua:</strong>  Mantenerse hidratado es esencial para la salud general. El agua ayuda en la digestión, la absorción de nutrientes y el transporte de oxígeno a las células.</li>
+              <li><strong>Come variedad:</strong> Incorpora alimentos de todos los grupos (proteínas, carbohidratos, grasas saludables, frutas y verduras) para obtener una gama completa de nutrientes.</li>
+              <li><strong>Prioriza alimentos frescos y naturales:</strong> Opta por frutas, verduras, granos enteros y proteínas magras en lugar de alimentos ultraprocesados.</li>
+              <li><strong>Evita el azúcar añadido:</strong> Reducir el consumo de azúcares refinados puede mejorar tu salud metabólica y mantener un nivel de energía más estable.</li>
+            </ul>
+          </div>
+          <div class="imagen">
+            <img src="/img/saludable.jpg" alt="Salud" class="imagen-info izquierda">
+          </div>
+        </div>  
       </section>
-
     </main>
     
     <!-- Footer -->
@@ -133,18 +143,17 @@
           <a href="index.html" class="menu-icon"> Inicio </a>
         </li>
         <li class="menu-elemento">
-          <a href="#" class="menu-icon"> Equipo </a>
+          <a href="sobre-nosotros.html#nosotros" class="menu-icon"> Equipo </a>
         </li>
         <li class="menu-elemento">
-          <a href="#" class="menu-icon"> Contacto </a>
+          <a href="ayuda.html#ayudanos" class="menu-icon"> Contacto </a>
         </li>
         <li class="menu-elemento">
           <a href="sobre-nosotros.html" class="menu-icon"> Sobre Nosotros </a>
         </li>
       </ul>
-      <p class="text">2024 | Todos los derechos reservados</p>
+      <p class="text">© Receclick 2024 | Todos los derechos reservados</p>
     </footer>
-    <script src="info.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

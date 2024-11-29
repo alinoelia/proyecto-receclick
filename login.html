@@ -8,45 +8,8 @@
     <title>FORMULARIO DE REGISTRO E INICIO DE SESIÓN</title>
 </head>
 <body>
-    <!-- Registrarse -->
-    <div class="container-form registro">
-        <div class="informacion">
-            <div class="info-childs">
-                <h2>Bienvenida/o a Receclick</h2>
-                <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
-                <input type="button" value="Iniciar Sesión" id="sign-in">
-            </div>
-        </div>
-        <div class="form-informacion">
-            <div class="form-informacion-childs">
-                <h2>Crear una Cuenta</h2>
-                <div class="iconos">
-                    <i class='bx bxl-google'></i>
-                    <i class='bx bxl-facebook-circle' ></i>
-                </div>
-                <p>o usa tu email para registrarte</p>
-                <form class="form">
-                    <label>
-                        <i class='bx bx-user' ></i>
-                        <input type="text" placeholder="Nombre Completo">
-                    </label>
-                    <label>
-                        <i class='bx bx-envelope' ></i>
-                        <input type="email" placeholder="Correo Electrónico">
-                    </label>
-                    <label>
-                        <i class='bx bx-lock-alt' ></i>
-                        <input type="password" placeholder="Contraseña">
-                    </label>
-                    <input type="submit" value="Registrarse">
-                </form>
-            </div>
-        </div>
-        
-    </div>
-
     <!-- Iniciar Sesión -->
-    <div class="container-form login hide">
+    <div class="container-form login">
         <div class="informacion">
             <div class="info-childs">
                 <h2>¡¡Bienvenido/a Nuevamente!!</h2>
@@ -59,23 +22,62 @@
                 <h2>Iniciar Sesión</h2>
                 <div class="iconos">
                     <i class='bx bxl-google'></i>
-                    <i class='bx bxl-facebook-circle' ></i>
+                    <i class='bx bxl-facebook-circle'></i>
                 </div>
                 <p>o Iniciar Sesión con una cuenta</p>
-                <form class="form">
+                <!-- Formulario para login -->
+                <form action="/auth/login" method="POST" class="form">
                     <label>
-                        <i class='bx bx-envelope' ></i>
-                        <input type="email" placeholder="Correo Electrónico">
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" name="email" placeholder="Correo Electrónico" required>
                     </label>
                     <label>
-                        <i class='bx bx-lock-alt' ></i>
-                        <input type="password" placeholder="Contraseña">
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" name="password" placeholder="Contraseña" required>
                     </label>
                     <input type="submit" value="Iniciar Sesión">
                 </form>
             </div>
         </div>
     </div>
-    <script src="main.js"></script>
+
+        <!-- Registrarse -->
+    <div class="container-form registro hide">
+        <div class="informacion">
+            <div class="info-childs">
+                <h2>Bienvenida/o a Receclick</h2>
+                <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+            </div>
+        </div>
+        <div class="form-informacion">
+            <div class="form-informacion-childs">
+                <h2>Crear una Cuenta</h2>
+                <div class="iconos">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+                <p>o usa tu email para registrarte</p>
+                <!-- Formulario para registrarse -->
+                <form action="/auth/register" method="POST" class="form">
+                    <label>
+                        <i class='bx bx-user'></i>
+                        <input type="text" name="name" placeholder="Nombre Completo" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" name="email" placeholder="Correo Electrónico" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" name="password" placeholder="Contraseña" required>
+                    </label>
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>

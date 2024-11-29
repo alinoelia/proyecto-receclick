@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="icon" href="/img/logoRECEC.webp">
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="./css/carrusel.css">
     <title>Receclick</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid d-flex justify-content-between">
-          <a class="navbar-brand activo" href="#">
+          <a class="navbar-brand activo" href="index.html">
             <img class="logo" src="/img/logoRECEC.webp" alt="Logo" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
@@ -49,53 +51,139 @@
         </div>
       </nav>
     </header>
-  <main>
+    <main>
       
-      <div class="contenedor">
-        <img src="/img/banner.jpg" alt="Imagen-del-inicio">
-        <section class="texto-encima">
-          <h1>ReceClick</h1>
-        <p class="slogan">Cocinar y ayudar a un click de distancia</p>
-        <p>Nuestra misión es crear recetas que aprovechen al máximo los alimentos y enseñar a reducir desperdicios, 
-          inspirando una cocina más sostenible. Además, ofrecemos productos en nuestro e-commerce para facilitar este estilo de vida
-        </p>
-        <br>
-        <button class="boton-1">Conocenos</button> 
-    </section>
-    </div>     
+      <div class="slider-container contenedor">
+        <div class="slider">
+            <div class="slide">
+                <img src="/img/imPosible1.png" alt="Imagen 1">
+                <section class="texto-encima">
+                    <h1>ReceClick</h1>
+                    <p class="slogan">Cocinar y ayudar a un click de distancia</p>
+                    <p class="p-inicio">
+                        Nuestra misión es crear recetas que aprovechen al máximo los alimentos y enseñar a reducir desperdicios, 
+                        inspirando una cocina más sostenible. Además, ofrecemos productos en nuestro e-commerce para facilitar este estilo de vida.
+                    </p>
+                    <button id="conocenos" class="boton-1">
+                        <a href="sobre-nosotros.html">Conocenos</a>
+                    </button>
+                </section>
+            </div>
+            <div class="slide">
+                <img src="/img/posible2.jpg" alt="Imagen 2">
+                <section class="texto-encima">
+                    <h1>Compartir cultura</h1>
+                    <p class="p-inicio hide-on-small">
+                      Queremos hacer tu día a día más fácil y sostenible, ofreciéndote recetas prácticas que aprovechan al máximo los alimentos y ayudan a reducir el desperdicio
+                    </p>
+                    <button id="conocenos" class="boton-1">
+                        <a href="sobre-nosotros.html">Conocenos</a>
+                    </button>
+                </section>
+            </div>
+            <div class="slide">
+                <img src="/img/posible3.jpg" alt="Imagen 3">
+                <section class="texto-encima">
+                    <h1>Generar Consciencia</h1>
+                    <p class="slogan hide-on-small">Reducir el desperdicio alimentario es nuestra mision</p>
+                    <p class="p-inicio hide-on-small">
+                      Nuestra misión es crear recetas que aprovechen al máximo los alimentos y enseñar a reducir desperdicios, 
+                      inspirando una cocina más sostenible.
+                    </p>
+                    <button id="conocenos" class="boton-1">
+                        <a href="sobre-nosotros.html">Conocenos</a>
+                    </button>
+                </section>
+            </div>
+        </div>
+        
+        <!-- Flechas de navegación -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    
+      <!-- Líneas de indicador -->
+      <div class="indicator-lines">
+        <div class="indicator-line" onclick="currentSlide(1)"></div>
+        <div class="indicator-line" onclick="currentSlide(2)"></div>
+        <div class="indicator-line" onclick="currentSlide(3)"></div>
+    </div>
+
+    </div>
+    
   <br>
   <br>
     <div class="contenedor-p">
-      <h3>¡Elegi una opcion para empezar a cocinar!</h3>
+      <h3>Prepara una receta a tu medida ¡comencemos!</h3>
     </div>
     <div class="contenedor-botones">
-      <button class="boton-1">Soy Comedor</button>
-      <button class="boton-1">Soy individual</button>
+      <button id="comedor" class="boton-1">
+        <a href="generar-receta.html">Generar receta</a>
+      </button>
+      <!-- <div id="cuadroComedor" class="cuadro-oculto">
+          <h3>Empecemos!</h3>
+          <form class="formulario" id="comedorForm">
+            <label for="exampleDataList" class="form-label">¿Cuál es el ingrediente principal?</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" required><br><br>
+            <datalist id="datalistOptions">
+              <option value="papa">
+              <option value="harina">
+              <option value="banana">
+              <option value="huevo">
+              <option value="pollo">
+            </datalist>
+            <label for="exampleDataList">¿Cuántas personas van a comer?</label>
+            <input type="text" id="cantComensales" name="cantidadComensales"><br><br>
+
+            <label for="exampleDataList" class="form-label">Otros ingredientes</label>
+            <input type="text" id="otrosIngredientes" name="otrosIngredientes"><br><br>
+
+            <button class="boton-1" type="submit">Generar receta</button>
+          </form>
+      </div> -->
     </div>
 
-    <div class="caja-borde">
+    <div class="caja-borde donar">
       <div>
-        <h2>Ayudá con tu donación</h2>
+        <h2 class="donar-text">Tu aporte alimenta a quienes más lo necesitan</h2>
       </div>
       <div class="boton-caja">
-        <button class="boton-2">Donar</button>
+        <button class="boton-2">
+          <a href="tienda.html">Donar</a>
+        </button>
       </div>
     </div>
+
     <section class="centrado">
-      <h2>Novedades</h2>
-      <p>Te invitamos a leer los diferentes articulos que escribimos</p>
-      <div class="borde-grid">
-        <div class="relato">
-          <h3>Relatos sobre la mesa</h3>
+      <h2>Artículos Informativos</h2>
+      <div class="nov-grid">
+        <!-- Primera novedad -->
+        <div class="img-nov">
+          <a href="informacion.html#vegetales" title="Más información sobre los vegetales">
+            <img src="/img/novedades/verduras.jpg" alt="Verduras de estación" />
+          </a>
+          <p>Todo lo que Debes Saber sobre los Vegetales</p>
         </div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div>
-          <button class="boton-2 size">Seguir Leyendo</button>
+        <!-- Segunda novedad -->
+        <div class="img-nov">
+          <a href="informacion.html#reciclaje" title="Más información el reciclaje de frutas y verduras">
+            <img src="/img/novedades/compostaje.jpg" alt="Reciclar alimentos" />
+          </a>
+          <p>Reciclaje de Frutas y Verduras</p>
         </div>
-        <!-- Falta Agregar imagenes-->
+        <!-- Tercera novedad -->
+        <div class="img-nov">
+          <a href="informacion.html#nutricion" title="Más información sobre tips de nutrición">
+            <img src="/img/novedades/nutricion.jpg" alt="Nutrición" />
+          </a>
+          <p>Tips de nutrición</p>
+        </div>
+        <!-- Cuarta novedad -->
+        <div class="img-nov">
+          <a href="informacion.html#comedores" title="Más información sobre comedores barriales">
+            <img src="/img/novedades/comedores.jpg" alt="Donación de alimentos" />
+          </a>
+          <p>Comedores barriales</p>
+        </div>
       </div>
     </section>
 
@@ -107,16 +195,11 @@
         <p class="letra-blanca">Nos importa...</p>
       </div>
       <div>
-        <button class="boton-info">Más información</button>
+        <button class="boton-info">
+          <a href="sobre-nosotros.html">Más información</a>
+        </button>
       </div>      
     </div>
-
-    <section class="centrado sobre">
-      <!-- Secccion que contiene el sobre la pagina (Receclick)-->
-      <h3>Sobre ReceClick</h3>
-      <!-- <video src=""></video> --><!-- Falta video de nosotras (Hay que grabarlo y editar)-->
-      <button class="boton-2 size">Sobre nosotros</button>
-    </section>
 
     <div class="div-mejorar centrado">
       <div class="texto-mejorar">
@@ -127,6 +210,10 @@
         que puedas contribuir a que este proyecto siga creciendo. Gracias!
       </p>
       </div>
+      <div>
+        <button class="boton-1 boton-opinion">
+          <a href="ayuda.html#ayudanos">Dar opinión</a>
+        </button>
     </div>
   </main>
     <footer class="footer">
@@ -152,20 +239,23 @@
           <a href="index.html" class="menu-icon"> Inicio </a>
         </li>
         <li class="menu-elemento">
-          <a href="#" class="menu-icon"> Equipo </a>
+          <a href="sobre-nosotros.html#nosotros" class="menu-icon"> Equipo </a>
         </li>
         <li class="menu-elemento">
-          <a href="#" class="menu-icon"> Contacto </a>
+          <a href="ayuda.html#ayudanos" class="menu-icon"> Contacto </a>
         </li>
         <li class="menu-elemento">
           <a href="sobre-nosotros.html" class="menu-icon"> Sobre Nosotros </a>
         </li>
       </ul>
-      <p class="text">2024 | Todos los derechos reservados</p>
+      <p class="text">© Receclick 2024 | Todos los derechos reservados</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/inicio.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/carru.js"></script>
   </body>
 </html>

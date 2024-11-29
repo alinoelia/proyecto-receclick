@@ -1,0 +1,89 @@
+.contenedor3 {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 5px;
+    font-size: 40px;
+}
+
+.formulario {
+    padding: 20px;
+    background-image: url('../img/blobsFinalPag.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-1 {
+    display: inline-block;
+    background-color: #FB6D00;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 auto;
+}
+
+.boton-1:hover {
+    background-color: #F98329;
+    transform: scale(1.10);
+}
+
+.boton-1:active {
+    transform: scale(0.95);
+}
+
+/* .boton-1{
+    height: 40px;
+    border-radius: 20px;
+    background-color: #F8F6E7;
+    width: 200px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 4%;
+} */
+
+#mensaje {
+    width: 100%;
+}
+.cajaborde {
+    width: 60%;
+    box-sizing: border-box;
+    border: solid #F98329 1px;
+    padding: 10px;
+    margin: 60px auto;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px #bebebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control{
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+
+@media screen and (max-width: 767px){
+    h2{
+        font-size: 2.5rem;
+    }
+}

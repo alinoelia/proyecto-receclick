@@ -1,7 +1,7 @@
 nav{
     /* padding: 15px;  */
     color: #F8F6E7;
-    /* border-bottom: solid 1px #303F46; */
+    border-bottom: solid 3px #FFC202; /* Linea inferior del navbar */
 
 }
 .activo{
@@ -9,12 +9,10 @@ nav{
 }
 .navbar{
     background-color: #F8F6E7;
-    border: none;
     box-shadow: none;
-    padding: 0 auto;
+    padding: 0.5rem 1rem;
     justify-content: space-around;
-    color: #303F46;
-    
+    color: #303F46; 
 }
 .nav-link{
     color: #303F46;
@@ -24,10 +22,10 @@ nav{
 }
 
 .logo {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     width: 48px;
     height:48px;
-    
+    object-fit: contain;
     
 }
 .btn{
@@ -38,4 +36,17 @@ nav{
 .btn-outline-success{
     background-color: #FFC202;
     border: none;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: #F8F6E7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item {
+    color: #303F46;
+}
+.dropdown-item:hover {
+    background-color: #FFC202;
+    color: #303F46;
 }

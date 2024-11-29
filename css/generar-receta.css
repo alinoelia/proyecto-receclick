@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    background-color: #F8F6E7;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #F8F6E7;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 2px #F98329;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #303F46;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #303F46;
+}
+
+form input,
+form textarea,
+form select,
+form button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form textarea#receta-generada {
+    background-color: #F8F6E7; /* Color de fondo para diferenciar el área de la receta */
+    border: 1px solid #ccc;
+    resize: none; /* No permitir redimensionar */
+    cursor: not-allowed; /* Mostrar que no es editable */
+    color: #303F46; /* Texto en un color oscuro */
+}
+
+/* ! Arreglos para el navbar*/
+.btn{
+    background-color: #FFC202;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background: #FB6D00; 
+    color: #303F46; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1); 
+}
+a{
+    color: #303F46;
+    position: top;
+    text-decoration: none;
+}
+.nav-item {
+    font-weight: 400;
+
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+}
+
+form button {
+    width: 30%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: #FFC202;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background-color: #F98329;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        background-color: #FFC202;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    } 
+}
+

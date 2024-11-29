@@ -18,6 +18,17 @@ body{
 main{
     text-align: center;
 }
+.btn{
+    background-color: #FFC202;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: #F98329;
+    transform: scale(1.1);
+}
+
 a{
     color: #303F46;
     text-decoration: none;
@@ -40,7 +51,8 @@ h1{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 0;
+    top: 50px;
+    bottom: 60px;
     padding-top: 30px;
 }
 .titulo{
@@ -60,7 +72,7 @@ h2{
     box-sizing: border-box;
     border: solid #F98329 1px;
     padding: 10px;
-    margin: 20px auto;
+    margin: 80px auto;
     border-radius: 30px;
     box-shadow: 3px 3px 5px #bebebe;
     display: grid;
@@ -143,7 +155,8 @@ footer .text {
 }
 
 .menu-icon {
-    color: #F8F6E7;
+    color: #303F46;
+    font-weight: 400;
     font-size: 20px;
     display: inline-block;
     text-decoration: none;
@@ -158,6 +171,9 @@ footer .text {
 
 
 @media screen and (max-width: 767px){
+    .navbar-toggler {
+        background-color: #FFC202;
+    }
     .cajatitulo{ /* cambios para el blob titulo en responsive */
         margin-top: 40px;
         padding-left: 10px;

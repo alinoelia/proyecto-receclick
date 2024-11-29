@@ -30,9 +30,11 @@ main {
     align-items: center;
     position: relative;
     padding-top: 30px;
+    top: 50px;
 
 }
 .titulo {
+    font-size: 4rem;
     font-weight: 600;
     position: absolute;
     top: 50%;
@@ -43,30 +45,33 @@ main {
 
 .cajatitulo img {
     width: 50%;
-    height: 50%;
-}
-
-h1{
-    font-size: 70px;
+    height: auto;
 }
 
 img {
     width: 100%;
     display: block;
-    object-fit: cover; /* Va a ocupar todo el espacio disponible*/
+    object-fit: cover; 
     object-position: center;
-} /* ! Aca termina los estilos del titulo */
+}
+ /* ! Aca termina los estilos del titulo */
 
 
 /* ! Arreglos para el navbar*/
 .btn{
     background-color: #FFC202;
     border: none;
-    /* border-radius: 30; */
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 a{
     color: #303F46;
     text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #F98329;
+    transform: scale(1.1);
 }
 
 /* !Estilos de la caja */
@@ -75,7 +80,7 @@ a{
     box-sizing: border-box;
     border: solid #F98329 1px;
     padding: 20px;
-    margin: 60px auto;
+    margin: 50px auto;
     border-radius: 30px;
     box-shadow: 3px 3px 5px #bebebe;
     display: grid;
@@ -119,47 +124,51 @@ p {
     text-align: justify;
 }
 
-
-/*! estilos de una galeria de fotos */
-.galeria {
-    width: 100%;
-    /* height: 100%; */
-    overflow: hidden;
+/* Estilos de la imagen del equipo*/
+.cajaborde-nuevo {
     display: flex;
-    position: relative;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #F8F6E7;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px #bebebe;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 5rem;
+    border: #F98329 solid 1px;
 }
 
-.imagenes {
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
-    position: relative;
+.equipo-imagen img {
+    max-width: 50%; /* Limita el ancho de la imagen */
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    object-position: center;
 }
 
-.imagenes img {
-    width: 100%;
-    height: 100%;
+.equipo-texto h2 {
+    font-size: 45px;
+    color: #F98329;
+    margin-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
 }
 
-.sesgoabajo {
-    z-index: 10;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-width: 0 0 35vh 100vw ;
-    border-style: solid;
-    border-color: transparent transparent #F8F6E7 transparent;
+.equipo-texto p {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
-.sesgoarriba {
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-width: 35vh 100vw 0 0  ;
-    border-style: solid;
-    border-color: #F8F6E7 transparent transparent  transparent;
-}
+/*Estilos del Footer */
 footer{
     background-color:#FFC202;
     min-height: 100px;
@@ -216,7 +225,8 @@ footer .text {
 }
 
 .menu-icon {
-    color: #F8F6E7;
+    color: #303F46;
+    font-weight: 400;
     font-size: 20px;
     display: inline-block;
     text-decoration: none;
@@ -228,17 +238,70 @@ footer .text {
 .menu-icon:hover {
     opacity: 1;
 }
-@media screen and (max-width: 767px){
-    .cajatitulo{
-        margin-top: 40px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .titulo{
-        font-size: 1.75rem;
-        margin-top: 10px;
-    }
-    .cajatitulo img{
+@media screen and (max-width: 768px){
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
         width: 100%;
+    }
+
+    .navbar-toggler {
+        background-color: #FFC202;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .cajatitulo {
+        margin-top: 50px;
+        padding: 10px;
+        text-align: center; 
+    }
+
+    .titulo {
+        font-size: 2.5rem; 
+        margin-top: -20px;
+        word-wrap: break-word; 
+    }
+
+    .cajatitulo img {
+        width: 100%; /* Ajusta la imagen al ancho disponible */
+        height: auto;
+    }
+
+    .cajaborde {
+        display: flex;
+        flex-direction: column; /* Cambia el layout a columna */
+        text-align: center;
+        gap: 15px; /* Añade espacio entre elementos */
+        padding: 15px;
+    }
+
+    .cajaborde img {
+        order: -1; /* Mueve las imágenes arriba del texto */
+        width: 80%; /* Ajusta el tamaño de las imágenes */
+        margin: 0 auto; /* Centra las imágenes */
+    }
+
+    .cajaborde h2 {
+        font-size: 1.8rem; /* Reduce el tamaño del subtítulo */
+        margin: 0;
+    }
+
+    .cajaborde p {
+        font-size: 1.15rem; /* Ajusta el tamaño del texto */
+        margin: 0 10px;
+    }
+
+    .equipo-imagen img {
+        max-width: 100%; /* Limita el ancho de la imagen */
+    }
+    .equipo-texto h2 {
+        font-size: 28px;
+    }
+    
+    .equipo-texto p {
+        font-size: 18px;
     }
 }

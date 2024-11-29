@@ -1,0 +1,43 @@
+/* Estilos básicos para la página 404 */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #F8F6E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#not-found {
+    text-align: center;
+    color: #333;
+}
+
+#not-found h1 {
+    font-size: 5rem;
+    margin: 0;
+    color:#FFC202;
+}
+
+#not-found p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+#not-found button {
+    height: 58px;
+    border: none;
+    border-radius: 30px;
+    background-color: #FFC202;
+    width: 250px;
+    font-size: 26px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+#not-found button:hover {
+    background-color: #FB6D00 ;
+}

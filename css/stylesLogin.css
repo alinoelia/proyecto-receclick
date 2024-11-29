@@ -163,6 +163,22 @@ body {
     position: absolute;
     transform: translateY(-300%)
 }
+/* Ajustes para el boton de inicio de sesion provisorio */
+.boton-inicio {
+    background-color: #FFC202;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    text-decoration: none;
+}
+
+.boton-inicio:hover {
+    background-color: #F98329;
+}
 
 @media screen and (max-width:750px) {
     html {

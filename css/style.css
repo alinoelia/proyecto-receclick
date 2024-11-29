@@ -14,7 +14,9 @@ body{
     background-color:#F8F6E7;
     justify-content: center;
 }
-
+ul .dropdown-menu{
+    background-color: #F8F6E7;
+}
 .boton-1{
     height: 58px;
     border: none;
@@ -23,6 +25,13 @@ body{
     width: 250px;
     font-size: 26px;
     margin-top: 4%;
+    transition: all 0.3s ease;
+}
+.boton-1:hover{
+    background: #FB6D00; 
+    color: #F8F6E7; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1); 
 }
 .boton-2{
     height: 50px;
@@ -32,37 +41,141 @@ body{
     border: none;
     color: #F8F6E7;
     font-size: 25px;
+    transition: all 0.3s ease;
 }
-.size {
+.boton-2:hover{
+    background-color:#FFC202;
+    color: #F8F6E7; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1); 
+}
+/* .size {
     font-size: 22px;
-}
+} */
 .contenedor {
     position: relative;
     width: 100%;
-    /* height: 100vh; */ /* Ajusta el alto a tu gusto */
+    height: 95vh;
 }
 
 .contenedor img {
     width: 100%;
-    height: 100%;
+    height: 95%;
     position: cover;
 }
 
 .contenedor .texto-encima {
     position: absolute;
-    top: 50%;
+    top: 40%; /* Baja el valor de 50% a 40% para moverlo más arriba */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: transparent; /* Ajusta el color del texto a tu gusto */
+    background-color: transparent; /* Ajusta el color del fondo si es necesario */
 }
+
+
+/* Contenedor principal del slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out; 
+}
+
+.slide {
+    position: relative; 
+    min-width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+/* Capa oscura con pseudo-elemento */
+.slide::before {
+    content: ''; /* Necesario para crear el pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con opacidad */
+    z-index: 1; 
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block; /* Eliminar cualquier espacio debajo de la imagen */
+    z-index: 0; 
+}
+
+.texto-encima {
+    position: relative;
+    z-index: 2; 
+    color: white;
+    padding: 20px;
+}
+
+h1, .slogan, .p-inicio, .boton-2 {
+    margin: 10px 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.indicator-lines {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.indicator-line {
+    width: 50px; 
+    height: 3px; 
+    background-color: #bbb; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.indicator-line.active {
+    background-color: #FFC202; 
+}
+
+
 
 h1 {
     background-color: transparent;
     color: #ffff ;
     font-size: 130px;  
     letter-spacing: 10px; 
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .contenedor .slogan { 
     color: #ffff;
@@ -72,20 +185,19 @@ h1 {
     margin-top: 20px;
 }
 
-
 .contenedor p { 
     color: #ffff;
     background-color: transparent;
     font-size: 18px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .contenedor-p{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    margin-top: 25px;
+    height: 120px;
+    margin-top: 5px;
 }
 h3 {
     font-size: 50px;
@@ -106,7 +218,7 @@ h3 {
     margin: 20px;
     justify-content: space-evenly;
     padding: 20px;
-    height: 200px;
+    height: 250px;
     align-items: center;
     border-radius: 30px;
     margin-top: 13%;
@@ -115,12 +227,23 @@ h3 {
 .caja-borde h2{
     font-size: 55px;
     text-align: center;
+    margin: 20px;
 
 }
 .boton-caja{
     align-items: center;
 }
-
+.donar{
+    margin: 80px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.donar button{
+    margin: 20px;
+}
 .cajatitulo{
     display: flex;
     justify-content: center;
@@ -139,8 +262,13 @@ h3 {
 h2{
     font-size: 70px;
 }
+.donar-text{
+    font-style: italic;
+}
+
 .relato h3 {
     font-size: 50px;
+    color:#FB6D00;
 }
 
 .centrado p {
@@ -153,7 +281,15 @@ h2{
 .btn{
     background-color: #FFC202;
     border: none;
-    /* border-radius: 30; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background: #FB6D00; 
+    color: #F8F6E7; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1); 
 }
 a{
     color: #303F46;
@@ -180,6 +316,70 @@ a{
     margin-top: 45px;
     margin-bottom: 25px;
 }
+
+/* Aca empieza la seccion de Novedades */
+.nov-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 0 auto; 
+    max-width: 100%; 
+    justify-content: center; 
+    align-items: stretch; 
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* Caja individual */
+.img-nov {
+    border: 2px solid #f98329 ;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: #F8F6E7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-height: 300px;
+}
+
+.img-nov:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
+    background-color: #FFC202; 
+    border-color: #FFC202;
+}
+
+/* Imagen dentro de cada caja */
+.img-nov img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Texto de cada caja */
+.img-nov p {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #303F46;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Efecto hover */
+.img-nov:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
 .seccion-mas-info{
     display: grid;
     background-color: #FB6D00;
@@ -200,6 +400,15 @@ a{
     font-weight: 400;
     justify-content: flex-end;
     font-size: 22px;
+    transition: all 0.3s ease;
+}
+.boton-info:hover{
+    color: #F8F6E7; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1); 
+}
+.boton-info a{
+    color: #F8F6E7;
 }
 .letra-blanca{
     margin-top: 30px;
@@ -217,16 +426,24 @@ a{
     position: relative;
     width: 400px; 
     height: 300px; 
-    background-image: url('../img/blobsFinalPag.png');
-    background-size: cover; /* Para ajustar la imagen al contenedor */
-    background-position: center;
+    /* background-image: url('../img/blobsFinalPag.png'); */
+    /* background-size: cover; 
+    background-position: center; */
     justify-content: center;
     align-items: center;
     margin: auto;
     margin-top: 10%;
     margin-bottom: 10%;
 }
+.boton-opinion {
+    margin-top: 320px; 
+}
+
 .texto-mejorar{
+    background-image: url('../img/blobsFinalPag.png');
+    background-size: 50%; /* Para ajustar la imagen al contenedor */
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -296,7 +513,8 @@ footer{
 }
 
 .menu-icon {
-    color: #F8F6E7;
+    color: #303F46;
+    font-weight: 400;
     font-size: 20px;
     display: inline-block;
     text-decoration: none;
@@ -316,7 +534,34 @@ footer{
     margin-bottom: 10px;
     font-size: 20px;
 }
+
+.cuadro-oculto{
+    display: none;
+    box-sizing: border-box;
+    border: solid #f98329 1px;
+    margin: 20px;
+    /* justify-content: space-evenly; */
+    padding: 20px;
+    /* height: 200px; */
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+}
+
 @media screen and (max-width: 767px){
+    navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar-toggler {
+        background-color: #FFC202;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
     .contenedor{
         margin-top: 60px;
         width: 100%;
@@ -327,5 +572,137 @@ footer{
     main{
         width: 100%;
         margin: 0 auto;
+    }
+    .div-mejorar{
+        max-width: 200px;
+        margin-bottom: 70px;
+        margin-top: 120px;
+        background: none;
+    }
+    .sobre{
+        margin-bottom: 100px;
+    }
+    .donar{
+        display: flex;
+        flex-direction: column;
+        /* height: 300px; */
+        margin-top: 40px;
+        width: 350px;
+        justify-content: center;
+        margin: 40px 40px;
+    }
+    .texto-encima{
+        max-width: 400px;
+    }
+    .inicio h1{ 
+        font-size: 4rem;
+    }
+    .boton-1{
+        height: 45px;
+        max-width: 200px;
+        margin: 10px;
+        font-size: 24px;
+    }
+    .boton-2{
+        height: 45px;
+        max-width: 200px;
+    }
+    .boton-info{
+        height: 48px;
+        max-width: 210px;
+    }
+    .contenedor-p{
+        text-align: center;
+    }
+    .img-nov{
+        margin: 0 auto;
+    }
+    .borde-grid{
+/*         margin-left: 20px;
+        margin-right: 20px;  */
+        margin: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .seccion-mas-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .inicio h1{
+        margin-top: 10px;
+    }
+
+    /* Responsive para pantallas pequeñas novedades*/
+    .nov-grid {
+        grid-template-columns: 1fr; /* Una columna */
+    }
+    .caja-borde{
+        min-height: 450px;
+        
+    }
+    h3{
+        margin: 10px;
+    }
+    .texto-mejorar h3 {
+        margin-top: 40px;
+    }
+    #individual{
+        margin-top: 90px;
+    }
+    #comedor{
+        margin-top: 90px;
+    }
+    .donar h2{
+        font-size: 3rem;
+    }
+    .boton-opinion{
+        margin-top: 440px;
+        margin-bottom: 300px;
+    }
+    .texto-mejorar {
+        background-size: 100%;
+        margin-top: 50px;
+    }
+    footer{
+        margin-top: 267px;
+    }
+    #conocenos{
+        margin-top: 0px;
+        width: 100%;
+    }
+    .centrado .nov-grid {
+        margin-top: -10px;
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    .centrado h2{
+        font-size: 60px;
+    }
+    .centrado {
+        margin-top: 100px;
+    }
+    .slider-container{
+        margin-top: 50px;
+        height: 320px;
+    }
+    .slide h1{
+        font-size: 3rem;
+        margin-top: 90px;
+        margin-bottom: 10px;
+    }
+    .hide-on-small {
+        display: none;
+    }
+    .contenedor-p{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    #comedor{
+        margin-bottom: 30px;
     }
 }

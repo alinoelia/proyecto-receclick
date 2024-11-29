@@ -66,27 +66,22 @@ details b {
     color: #fff;
 }
 
-
-
-/* @media screen and (min-width: 768px) {
-    .contenedor {
-        flex-direction: row;
-        width: 100%;
-        background-size: 400px;
-        font-size: 30px;
-    }
-    
-} */
-
 /* ! Arreglos para el navbar*/
 .btn{
     background-color: #FFC202;
     border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
     /* border-radius: 30; */
 }
 a{
     color: #303F46;
     text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #F98329;
+    transform: scale(1.1);
 }
 
 /* !Estilos del titulo */
@@ -96,11 +91,10 @@ a{
     align-items: center;
     position: relative;
     padding-top: 30px;
-
-    animation-name: left-to-right;
-    animation-duration: 2s;
+    top: 50px;
 }
 .titulo {
+    font-size: 4rem;
     font-weight: 600;
     position: absolute;
     top: 50%;
@@ -109,22 +103,18 @@ a{
     text-align: center;
 }
 
-.cajatitulo titulo {
-    position: 0;
+.cajatitulo img {
+    width: 50%;
+    height: auto;
 }
 
-h1{
-    font-size: 70px;
-}
-
-img {
+/* img {
     width: 50%;
     height: 50%;
     display: block;
-    /* ! va a ocupar todo el espacio disponible*/
     object-fit: cover;
     object-position: center;
-}
+} */
 
 /* !Estilos de la caja */
 .cajaborde{
@@ -132,54 +122,79 @@ img {
     box-sizing: border-box;
     border: solid #F98329 1px;
     padding: 10px;
-    margin: 20px auto;
+    margin: 60px auto;
     border-radius: 30px;
     box-shadow: 3px 3px 5px #bebebe;
     
 }
 
-.contenedor3 {
-    width: 100%;
-    padding: 30px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 10px;
-}
-h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-top: 5px;
-    font-size: 40px;
+.cajaborde h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #303F46;
 }
 
-.formulario {
-    height: 100%;
+/* Estilos del formulario */
+.formulario label {
+    display: block;
+    font-size: 1rem;
+    color: #303F46;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 95%;
     padding: 10px;
-    margin: 30px;
-    background-image: url('../img/blobsFinalPag.png');
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #F98329;
+    outline: none;
+    box-shadow: 0 0 5px rgba(251, 109, 0, 0.3);
+}
+
+/* Botón de enviar */
+.formulario .boton-1 {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 400px; 
-    
 }
 
-.boton-1{
-    height: 40px;
-    border-radius: 20px;
-    background-color: #F8F6E7;
-    width: 200px;
-    font-size: 22px;
-    font-weight: 500;
-    margin-top: 4%;
+.boton-1 {
+    display: inline-block;
+    background-color: #FB6D00;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 auto;
 }
 
-#mensaje {
-    width: 100%;
+.boton-1:hover {
+    background-color: #F98329;
+    transform: scale(1.10);
+}
+
+.boton-1:active {
+    transform: scale(0.95);
 }
 
 #feedbackForm {
@@ -238,7 +253,8 @@ footer{
 }
 
 .menu-icon {
-    color: #F8F6E7;
+    color: #303F46;
+    font-weight: 400;
     font-size: 20px;
     display: inline-block;
     text-decoration: none;
@@ -260,13 +276,22 @@ footer{
 }
 
 @media screen and (max-width: 767px){
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        background-color: #FFC202;
+    }
+
     .cajatitulo{
         margin-top: 40px;
         padding-left: 10px;
         padding-right: 10px;
     }
     .titulo{
-        font-size: 1.75rem;
+        font-size: 3.75rem;
         margin-top: 10px;
     }
     .cajatitulo img{
